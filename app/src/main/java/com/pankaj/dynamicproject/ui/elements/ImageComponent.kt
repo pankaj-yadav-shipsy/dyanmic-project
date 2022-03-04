@@ -1,18 +1,13 @@
 package com.pankaj.dynamicproject.ui.elements
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.DefaultAlpha
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
-import androidx.compose.ui.unit.dp
 import com.pankaj.dynamicproject.R
 import com.pankaj.dynamicproject.ui.modifier.createAlignment
 import com.pankaj.dynamicproject.ui.modifier.createModifier
@@ -21,12 +16,21 @@ import com.pankaj.dynamicproject.ui.util.getResourceId
 
 @Composable
 fun ImageComponent(config: Map<String, Any?>?) {
-    val prop = config?.get("prop") as Map<String, Any?>?
+    var prop = config?.get("prop") as Map<String, Any?>?
     val data = config?.get("data") as Map<String, Any?>?
+    val action = config?.get("action") as Map<String, Any?>?
+    val updateProp = mutableMapOf<String, Any?>()
+
+    if (prop != null) {
+        for ((key, value) in prop) {
+            updateProp[key] = value
+        }
+        updateProp["action"] = action
+    }
     when ("painter") {
-        "vector" -> VectorImageComponent(prop = prop, data = data)
-        "painter" -> PainterImageComponent(prop = prop, data = data)
-        "bitmap" -> BitmapImageComponent(prop = prop, data = data)
+        "vector" -> VectorImageComponent(prop = updateProp, data = data)
+        "painter" -> PainterImageComponent(prop = updateProp, data = data)
+        "bitmap" -> BitmapImageComponent(prop = updateProp, data = data)
     }
 }
 

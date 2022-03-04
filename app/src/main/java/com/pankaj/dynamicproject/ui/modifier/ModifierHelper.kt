@@ -2,6 +2,7 @@ package com.pankaj.dynamicproject.ui.modifier
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.Modifier
@@ -10,12 +11,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
+import com.pankaj.dynamicproject.ui.action.ActionHandler
 import com.pankaj.dynamicproject.ui.util.convertToColor
 import com.pankaj.dynamicproject.ui.util.convertToDp
 
 
-fun createModifier(config: Map<String, Any?>? = null, rowScope: RowScope? = null,columnScope: ColumnScope?=null ): Modifier {
+fun createModifier(
+    config: Map<String, Any?>? = null,
+    rowScope: RowScope? = null,
+    columnScope: ColumnScope? = null
+): Modifier {
     val prop = config?.get("modifier") as Map<String, Any?>?
+    val action = config?.get("action") as Map<String, Any?>?
     var modifier: Modifier? = null
     for ((key, value) in prop ?: mapOf()) {
         when (key) {
@@ -60,9 +67,15 @@ fun createModifier(config: Map<String, Any?>? = null, rowScope: RowScope? = null
                 columnScope?.apply {
                     modifier = getModifierObj(modifier).weight(1f)
                 }
-
             }
-
+        }
+    }
+    action?.let {
+        modifier = getModifierObj(modifier).clickable {
+            ActionHandler.actionHandler(
+                it["action_type"] as String,
+                it
+            )
         }
     }
     return modifier ?: Modifier

@@ -19,6 +19,29 @@
       },
       {
         "item_id":"undeliver_button"
+      },
+      {
+        "item_id":"undeliver_button"
+      }
+    ]
+  },
+  "deliver_screen": {
+    "cover":"order_detail_parent",
+    "scroll_child": [
+      {
+        "item_id":"user_detail"
+      },{
+        "item_id":"address_detail"
+      },
+      {
+        "item_id":"payment_detail"
+      },{
+        "item_id":"order_detail"
+      }
+    ],
+    "bottom_child": [
+      {
+        "item_id":"deliver_button"
       }
     ]
   }
