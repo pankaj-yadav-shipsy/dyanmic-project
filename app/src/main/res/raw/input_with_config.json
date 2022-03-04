@@ -1,0 +1,226 @@
+{
+  "order_detail_screen": {
+    "view": [
+      {
+        "type": "column-layout",
+        "prop": {
+          "modifier": {
+            "fill": 0,
+            "background": "333333"
+          }
+        },
+        "child": [
+          {
+            "type": "column-layout",
+            "prop": {
+              "modifier": {
+                "fill": 0,
+                "padding": 10,
+                "background": "FFFFFF",
+                "border": {
+                  "size": 30
+                }
+              }
+            },
+            "child": [
+              {
+                "type": "column-layout",
+                "prop": {
+                  "fill": 0
+                },
+                "child": [
+                  {
+                    "type": "scrollable-layout",
+                    "prop": {
+                      "modifier": {
+                        "fill": 0,
+                        "padding": 20,
+                        "weight": 1,
+                        "background": "FFFFFF",
+                        "border": {
+                          "size": 30
+                        }
+                      }
+                    },
+                    "child": [
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Customer"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input": "user-name",
+                            "dataType":"string"
+                          },
+                          {
+                            "theme": "detail_icon",
+                            "input": "call-image",
+                            "dataType": "map"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "divider"
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Address"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input": "user-address",
+                            "dataType": "string"
+                          },
+                          {
+                            "theme": "detail_icon",
+                            "input": "navigation-image",
+                            "dataType":"map"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "divider"
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Bill Amount"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input": "order-amount",
+                            "dataType":"string"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Pay mode"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input":"payment-type",
+                            "dataType":"string"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "divider"
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Items"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input":"order-item",
+                            "dataType":"string"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Special Instruction"
+
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input": "instruction",
+                            "dataType":"string"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input": "instruction",
+                            "dataType":"string"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "column-layout",
+                    "prop": {},
+                    "child": [
+                      {
+                        "theme": "positive_button",
+                        "child": [
+                          {
+                            "theme": "button_text",
+                            "data": "Deliver"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "negetive_button",
+                        "child": [
+                          {
+                            "theme": "button_text",
+                            "data": "Undeliver"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "input": {
+      "user-name": "pankaj",
+      "user-data": "Me working",
+      "user-address": "Shipsy, Anu Tower, 149 Sector 44, Kanhai Road,Gurugram",
+      "call-image": {
+        "image": "call-icon",
+        "description": "pankaj"
+      },
+      "navigation-image": {
+        "image": "navigation-icon",
+        "description": "pankaj"
+      },
+      "order-amount":"$32",
+      "payment-type":"Cash On Delivery",
+      "order-item":"1 x Garlic Breadstic \n1 x Onion Pizza",
+      "instruction":"Special Instruction",
+      "user-list": [
+        {
+          "name": "pankaj"
+        },
+        {
+          "name": "Ravi"
+        },
+        {
+          "name": "Working"
+        }
+      ]
+    }
+  }
+}

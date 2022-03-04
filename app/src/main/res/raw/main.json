@@ -1,0 +1,651 @@
+{
+  "order_detail_screen": {
+    "view": [
+      {
+        "type": "column-layout",
+        "prop": {
+          "modifier": {
+            "fill": 0,
+            "background": "333333"
+          }
+        },
+        "child": [
+          {
+            "type": "column-layout",
+            "prop": {
+              "modifier": {
+                "fill": 0,
+                "padding": 10,
+                "background": "FFFFFF",
+                "border": {
+                  "size": 30
+                }
+              }
+            },
+            "child": [
+              {
+                "type":"column-layout",
+                "prop":{
+                  "fill":0
+                },
+                "child":[
+                  {
+                    "type": "scrollable-layout",
+                    "prop": {
+                      "modifier": {
+                        "fill": 0,
+                        "padding": 20,
+                        "weight":1,
+                        "background": "FFFFFF",
+                        "border": {
+                          "size": 30
+                        }
+                      }
+                    },
+                    "child": [
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Customer"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Raghav Singh"
+                          },
+                          {
+                            "type": "image-view",
+                            "prop": {
+                              "modifier": {
+                                "padding": {
+                                  "start": 10
+                                }
+                              }
+                            },
+                            "data": {
+                              "image": "call-icon",
+                              "description": "pankaj"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "divider-view",
+                        "prop": {
+                          "color": "E9E9E9",
+                          "thickness": 1
+                        }
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Address"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Shipsy, Anu Tower, 149 Sector 44, Kanhai Road,Gurugram"
+                          },
+                          {
+                            "type": "image-view",
+                            "prop": {
+                              "modifier": {
+                                "padding": {
+                                  "start": 10
+                                }
+                              }
+                            },
+                            "data": {
+                              "image": "navigation-icon",
+                              "description": "pankaj"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "divider-view",
+                        "prop": {
+                          "color": "E9E9E9",
+                          "thickness": 1
+                        }
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Bill Amount"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "$32"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Pay mode"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Cash On Delivery"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "divider-view",
+                        "prop": {
+                          "color": "E9E9E9",
+                          "thickness": 1
+                        }
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Items"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "1 x Garlic Breadstic \n1 x Onion Pizza"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row-layout",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "height": 80
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "333333",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "color": "333333",
+                              "font-size": 14,
+                              "font-weight": 500,
+                              "modifier": {
+                                "weight": 1
+                              }
+                            },
+                            "data": "Bhaiya jaldi aana"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"type":"column-layout",
+                    "prop":{},
+                    "child":[
+                      {
+                        "type": "button-view",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "padding":{
+                              "start":20,
+                              "end":20,
+                              "top":10,
+                              "bottom":10
+                            }
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "FFFFFF",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Deliver"
+                          }
+                        ]
+                      },{
+                        "type": "button-view",
+                        "prop": {
+                          "modifier": {
+                            "fillWidth": 0,
+                            "padding":{
+                              "start":20,
+                              "end":20,
+                              "top":10,
+                              "bottom":10
+                            }
+                          },
+                          "verticalAlignment": "center"
+                        },
+                        "child": [
+                          {
+                            "type": "text-view",
+                            "prop": {
+                              "modifier": {
+                                "width": 100
+                              },
+                              "color": "FFFFFF",
+                              "font-size": 12,
+                              "horizontalAlignment": "start"
+                            },
+                            "data": "Undeliver"
+                          }
+                        ]
+                      }
+                    ]
+
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "input": {
+      "user-name": "pankaj",
+      "user-data": "Me working",
+      "user-list": [
+        {
+          "name": "pankaj"
+        },
+        {
+          "name": "Ravi"
+        },
+        {
+          "name": "Working"
+        }
+      ]
+    }
+  }
+}

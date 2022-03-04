@@ -1,0 +1,91 @@
+{
+  "sub_heading_text": {
+    "type": "text-view",
+    "prop": {
+      "modifier": {
+        "width": 100
+      },
+      "color": "333333",
+      "font-size": 12,
+      "horizontalAlignment": "start"
+    }
+  },
+  "main_info_text": {
+    "type": "text-view",
+    "prop": {
+      "color": "333333",
+      "font-size": 14,
+      "font-weight": 500,
+      "modifier": {
+        "weight": 1
+      }
+    }
+  },
+  "divider": {
+    "type": "divider-view",
+    "prop": {
+      "color": "E9E9E9",
+      "thickness": 1
+    }
+  },
+  "positive_button": {
+    "type": "button-view",
+    "prop": {
+      "modifier": {
+        "fillWidth": 0,
+        "padding": {
+          "start": 20,
+          "end": 20,
+          "top": 10,
+          "bottom": 10
+        }
+      },
+      "verticalAlignment": "center"
+    }
+  },
+  "negetive_button": {
+    "type": "button-view",
+    "prop": {
+      "modifier": {
+        "fillWidth": 0,
+        "padding": {
+          "start": 20,
+          "end": 20,
+          "top": 10,
+          "bottom": 10
+        }
+      }
+    }
+  },
+  "button_text": {
+    "type": "text-view",
+    "prop": {
+      "modifier": {
+        "width": 100
+      },
+      "color": "FFFFFF",
+      "font-size": 12,
+      "horizontalAlignment": "start"
+    }
+  },
+  "detail_info_item": {
+    "type": "row-layout",
+    "prop": {
+      "modifier": {
+        "fillWidth": 0,
+        "height": 80
+      },
+      "verticalAlignment": "center"
+    }
+  },
+  "detail_icon": {
+    "type": "image-view",
+    "prop": {
+      "modifier": {
+        "padding": {
+          "start": 10
+        }
+      }
+    }
+  }
+}
