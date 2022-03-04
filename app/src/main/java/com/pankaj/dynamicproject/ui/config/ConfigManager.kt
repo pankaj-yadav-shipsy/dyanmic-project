@@ -2,16 +2,17 @@ package com.pankaj.dynamicproject.ui.config
 
 import android.content.Context
 import com.google.gson.Gson
-import com.google.gson.internal.LinkedTreeMap
 import com.google.gson.reflect.TypeToken
 import com.pankaj.dynamicproject.R
+import convertTmpDataToDevData
 
 fun Context.getScreenRenderingConfig(screenTag: String): List<Map<String, Any?>?> {
+    var screenConfig = getScreenConfig(this,screenTag)
+    screenConfig = convertTmpDataToDevData(this,screenConfig)
     val (screenData, inputData) = fetchScreenRenderConfig(
-        context = this,
-        screenTag = screenTag
+        screenData = screenConfig
     )
-    val renderConfig = updateScreenTheme(context = this,screenData)
+    val renderConfig = updateScreenTheme(this,screenData)
     val data = mergeDataToDisplayWithScreenConfig(
         renderConfig = renderConfig,
         dataToDisplay = inputData
@@ -22,25 +23,26 @@ fun Context.getScreenRenderingConfig(screenTag: String): List<Map<String, Any?>?
 
 }
 
-private fun fetchScreenRenderConfig(
-    context: Context,
-    screenTag: String
-): Pair<List<Map<String, Any?>?>, Map<String, Any?>> {
-    val config = context.resources.openRawResource(R.raw.input_with_config)
+private fun getScreenConfig(context: Context,screenTag: String): Map<String, Any?> {
+    val config = context.resources.openRawResource(R.raw.tpm_config)
         .bufferedReader().use { it.readText() }
     val wholeConfig: Map<String, Any?> = Gson().fromJson(
         config,
         object : TypeToken<Map<String, Any?>>() {}.type
     )
+    return wholeConfig[screenTag] as Map<String, Any?>
+}
+
+private fun fetchScreenRenderConfig(screenData: Map<String, Any?>): Pair<List<Map<String, Any?>?>, Map<String, Any?>?> {
     return Pair(
-        (wholeConfig[screenTag] as Map<String, Any?>)["view"] as List<Map<String, Any?>?>,
-        (wholeConfig[screenTag] as Map<String, Any?>)["input"] as Map<String, Any?>
+        screenData["view"] as List<Map<String, Any?>?>,
+        screenData["input"] as Map<String, Any?>?
     )
 }
 
 fun mergeDataToDisplayWithScreenConfig(
     renderConfig: List<Map<String, Any?>?>,
-    dataToDisplay: Map<String, Any?>
+    dataToDisplay: Map<String, Any?>?
 ): List<Map<String, Any?>?> {
     val childReturn = updateChild(renderConfig, dataToDisplay)
     println("merge data $childReturn")

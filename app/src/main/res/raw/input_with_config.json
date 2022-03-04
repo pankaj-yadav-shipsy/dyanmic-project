@@ -2,46 +2,16 @@
   "order_detail_screen": {
     "view": [
       {
-        "type": "column-layout",
-        "prop": {
-          "modifier": {
-            "fill": 0,
-            "background": "333333"
-          }
-        },
+        "theme": "parent_layout",
         "child": [
           {
-            "type": "column-layout",
-            "prop": {
-              "modifier": {
-                "fill": 0,
-                "padding": 10,
-                "background": "FFFFFF",
-                "border": {
-                  "size": 30
-                }
-              }
-            },
+            "theme": "border_parent",
             "child": [
               {
-                "type": "column-layout",
-                "prop": {
-                  "fill": 0
-                },
+                "theme": "child_layout",
                 "child": [
                   {
-                    "type": "scrollable-layout",
-                    "prop": {
-                      "modifier": {
-                        "fill": 0,
-                        "padding": 20,
-                        "weight": 1,
-                        "background": "FFFFFF",
-                        "border": {
-                          "size": 30
-                        }
-                      }
-                    },
+                    "theme": "scollable_parent",
                     "child": [
                       {
                         "theme": "detail_info_item",
@@ -53,7 +23,7 @@
                           {
                             "theme": "main_info_text",
                             "input": "user-name",
-                            "dataType":"string"
+                            "dataType": "string"
                           },
                           {
                             "theme": "detail_icon",
@@ -80,7 +50,7 @@
                           {
                             "theme": "detail_icon",
                             "input": "navigation-image",
-                            "dataType":"map"
+                            "dataType": "map"
                           }
                         ]
                       },
@@ -97,7 +67,7 @@
                           {
                             "theme": "main_info_text",
                             "input": "order-amount",
-                            "dataType":"string"
+                            "dataType": "string"
                           }
                         ]
                       },
@@ -110,8 +80,8 @@
                           },
                           {
                             "theme": "main_info_text",
-                            "input":"payment-type",
-                            "dataType":"string"
+                            "input": "payment-type",
+                            "dataType": "string"
                           }
                         ]
                       },
@@ -127,23 +97,8 @@
                           },
                           {
                             "theme": "main_info_text",
-                            "input":"order-item",
-                            "dataType":"string"
-                          }
-                        ]
-                      },
-                      {
-                        "theme": "detail_info_item",
-                        "child": [
-                          {
-                            "theme": "sub_heading_text",
-                            "data": "Special Instruction"
-
-                          },
-                          {
-                            "theme": "main_info_text",
-                            "input": "instruction",
-                            "dataType":"string"
+                            "input": "order-item",
+                            "dataType": "string"
                           }
                         ]
                       },
@@ -157,7 +112,21 @@
                           {
                             "theme": "main_info_text",
                             "input": "instruction",
-                            "dataType":"string"
+                            "dataType": "string"
+                          }
+                        ]
+                      },
+                      {
+                        "theme": "detail_info_item",
+                        "child": [
+                          {
+                            "theme": "sub_heading_text",
+                            "data": "Special Instruction"
+                          },
+                          {
+                            "theme": "main_info_text",
+                            "input": "instruction",
+                            "dataType": "string"
                           }
                         ]
                       }
@@ -206,10 +175,10 @@
         "image": "navigation-icon",
         "description": "pankaj"
       },
-      "order-amount":"$32",
-      "payment-type":"Cash On Delivery",
-      "order-item":"1 x Garlic Breadstic \n1 x Onion Pizza",
-      "instruction":"Special Instruction",
+      "order-amount": "$32",
+      "payment-type": "Cash On Delivery",
+      "order-item": "1 x Garlic Breadstic \n1 x Onion Pizza",
+      "instruction": "Special Instruction",
       "user-list": [
         {
           "name": "pankaj"

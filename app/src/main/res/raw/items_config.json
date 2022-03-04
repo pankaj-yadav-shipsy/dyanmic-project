@@ -1,0 +1,90 @@
+{
+  "user_detail": {
+    "theme": "detail_info_item",
+    "child": [
+      {
+        "theme": "sub_heading_text",
+        "data": "Customer"
+      },
+      {
+        "theme": "main_info_text",
+        "input": "user-name",
+        "dataType": "string"
+      },
+      {
+        "theme": "detail_icon",
+        "input": "call-image",
+        "dataType": "map"
+      }
+    ]
+  },
+  "address_detail": {
+    "theme": "detail_info_item",
+    "child": [
+      {
+        "theme": "sub_heading_text",
+        "data": "Address"
+      },
+      {
+        "theme": "main_info_text",
+        "input": "user-address",
+        "dataType": "string"
+      },
+      {
+        "theme": "detail_icon",
+        "input": "navigation-image",
+        "dataType": "map"
+      }
+    ]
+  },
+  "payment_detail": {
+    "theme": "detail_info_item",
+    "child": [
+      {
+        "theme": "sub_heading_text",
+        "data": "Bill Amount"
+      },
+      {
+        "theme": "main_info_text",
+        "input": "order-amount",
+        "dataType": "string"
+      }
+    ]
+  },
+  "order_detail": {
+    "theme": "detail_info_item",
+    "child": [
+      {
+        "theme": "sub_heading_text",
+        "data": "Pay mode"
+      },
+      {
+        "theme": "main_info_text",
+        "input": "payment-type",
+        "dataType": "string"
+      }
+    ]
+  },
+  "bottom_area": {
+    "type": "column-layout",
+    "prop": {}
+  },
+  "deliver_button": {
+    "theme": "positive_button",
+    "child": [
+      {
+        "theme": "button_text",
+        "data": "Deliver"
+      }
+    ]
+  },
+  "undeliver_button": {
+    "theme": "negetive_button",
+    "child": [
+      {
+        "theme": "button_text",
+        "data": "Undeliver"
+      }
+    ]
+  }
+}

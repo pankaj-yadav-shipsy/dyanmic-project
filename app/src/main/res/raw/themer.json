@@ -1,4 +1,46 @@
 {
+  "parent_layout": {
+    "type": "column-layout",
+    "prop": {
+      "modifier": {
+        "fill": 0,
+        "background": "333333"
+      }
+    }
+  },
+  "border_parent":{
+    "type": "column-layout",
+    "prop": {
+      "modifier": {
+        "fill": 0,
+        "padding": 10,
+        "background": "FFFFFF",
+        "border": {
+          "size": 30
+        }
+      }
+    }
+  },
+  "child_layout": {
+    "type": "column-layout",
+    "prop": {
+      "fill": 0
+    }
+  },
+  "scollable_parent": {
+    "type": "scrollable-layout",
+    "prop": {
+      "modifier": {
+        "fill": 0,
+        "padding": 20,
+        "weight": 1,
+        "background": "FFFFFF",
+        "border": {
+          "size": 30
+        }
+      }
+    }
+  },
   "sub_heading_text": {
     "type": "text-view",
     "prop": {
@@ -87,5 +129,9 @@
         }
       }
     }
+  },
+  "bottom_area": {
+    "type": "column-layout",
+    "prop": {}
   }
 }

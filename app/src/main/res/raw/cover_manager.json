@@ -1,0 +1,57 @@
+{
+  "order_detail_parent": {
+    "view": [
+      {
+        "theme": "parent_layout",
+        "child": [
+          {
+            "theme": "border_parent",
+            "child": [
+              {
+                "theme": "child_layout",
+                "child": [
+                  {
+                    "theme": "scollable_parent",
+                    "child_id": "scroll_child"
+                  },
+                  {
+                    "theme": "bottom_area",
+                    "child_id": "bottom_child"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "input": {
+      "user-name": "pankaj",
+      "user-data": "Me working",
+      "user-address": "Shipsy, Anu Tower, 149 Sector 44, Kanhai Road,Gurugram",
+      "call-image": {
+        "image": "call-icon",
+        "description": "pankaj"
+      },
+      "navigation-image": {
+        "image": "navigation-icon",
+        "description": "pankaj"
+      },
+      "order-amount": "$32",
+      "payment-type": "Cash On Delivery",
+      "order-item": "1 x Garlic Breadstic \n1 x Onion Pizza",
+      "instruction": "Special Instruction",
+      "user-list": [
+        {
+          "name": "pankaj"
+        },
+        {
+          "name": "Ravi"
+        },
+        {
+          "name": "Working"
+        }
+      ]
+    }
+  }
+}

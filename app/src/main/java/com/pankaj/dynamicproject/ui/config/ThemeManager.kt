@@ -6,13 +6,12 @@ import com.google.gson.internal.LinkedTreeMap
 import com.google.gson.reflect.TypeToken
 import com.pankaj.dynamicproject.R
 
-val updatedList = arrayListOf<Map<String, Any?>?>()
 
 fun updateScreenTheme(
     context: Context,
     screenData: List<Map<String, Any?>?>
 ): List<Map<String, Any?>?> {
-    updatedList.clear()
+    val updatedList = arrayListOf<Map<String, Any?>?>()
     val theme = loadThemeFile(context)
     updatedList.addAll(screenData)
     return updateTheme(parent = updatedList, theme = theme)
